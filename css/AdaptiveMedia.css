@@ -136,7 +136,11 @@
     .poster {
         margin-bottom: 0%;
     }
-
+    .arttext img{
+        max-width: 100%;
+        margin: 0%;
+        padding: 0%;
+     }
     .artname h2{
         font-size: 5vh;
      }
