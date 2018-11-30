@@ -3,7 +3,7 @@
     body {
         margin: 0%;
         max-width: 100%;
-        font-size: 2.5vh;
+        font-size: 2.3vh;
         overflow-x: hidden !important;
     }
 
@@ -30,21 +30,21 @@
     }
 
     .images .image-headline {
-        font-size: 5vw;
+        font-size: 5vh;
     }
 
     .images .image-description {
-        font-size: 3vw;
+        font-size: 3vh;
         top: 55%;
     }
 
     .quote {
         padding: 3%;
-        font-size: 3vw;
+        font-size: 3vh;
     }
 
         .quote span {
-            font-size: 2.5vw;
+            font-size: 2.5vh;
         }
 
     .movies-container ul {
@@ -114,7 +114,7 @@
         max-width: 100%;
         margin: 1% 5%;
         padding: 4%;
-        font-size: 3.5vw;
+        font-size: 3.5vh;
     }
 
     #randmovie {
@@ -123,13 +123,13 @@
     }
 
     .generate-again {
-        font-size: 3vw;
+        font-size: 3vh;
         padding: 5%;
         margin-top: 40%;
     }
 
     #movie .tab {
-        font-size: 2.8vw;
+        font-size: 2.8vh;
         padding-top: 3%;
     }
 
@@ -137,12 +137,15 @@
         margin-bottom: 0%;
     }
 
+    .artname h2{
+        font-size: 5vh;
+     }
     .summary {
         margin: 1% 0%;
     }
 
     #raitings .mark {
-        font-size: 3vw;
+        font-size: 3vh;
         margin: 1% 2%;
         padding: 3%;
     }
