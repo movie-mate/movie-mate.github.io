@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MOVIES>
+  <FILM>
+    <TITLE>Аквамен</TITLE>
+    <YEAR>2018</YEAR>
+    <DIRECTOR>Джеймс Ван</DIRECTOR>
+    <GENRE>fantasy</GENRE>
+    <LINK>MoviePage1.html</LINK>
+  </FILM>
+  <FILM>
+    <TITLE>Две королевы</TITLE>
+    <YEAR>2018</YEAR>
+    <DIRECTOR>Джози Рурк</DIRECTOR>
+    <GENRE>drama</GENRE>
+    <LINK>MoviePage4.html</LINK>
+  </FILM>
+  <FILM>
+    <TITLE>Крид 2</TITLE>
+    <YEAR>2018</YEAR>
+    <DIRECTOR>Стивен Кейпл мл.</DIRECTOR>
+    <GENRE>drama</GENRE>
+    <LINK>MoviePage2.html</LINK>
+  </FILM>
+  <FILM>
+    <TITLE>Фантастические твари: Преступления Грин-де-Вальда</TITLE>
+    <YEAR>2018</YEAR>
+    <DIRECTOR>Дэвид Йетс</DIRECTOR>
+    <GENRE>fantasy</GENRE>
+    <LINK>MoviePage3.html</LINK>
+  </FILM>
+  <FILM>
+    <TITLE>Суспирия</TITLE>
+    <YEAR>2018</YEAR>
+    <DIRECTOR>Дэвид Йетс</DIRECTOR>
+    <GENRE>horror</GENRE>
+    <LINK>MoviePage5.html</LINK>
+  </FILM>
+  <FILM>
+    <TITLE>Человек-паук: Через вселенные</TITLE>
+    <YEAR>2018</YEAR>
+    <DIRECTOR>Дэвид Йетс</DIRECTOR>
+    <GENRE>adventures</GENRE>
+    <LINK>MoviePage6.html</LINK>
+  </FILM>
+</MOVIES>

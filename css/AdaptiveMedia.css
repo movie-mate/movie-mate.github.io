@@ -1,0 +1,121 @@
+﻿@media only screen and (max-width: 800px) {
+
+    body {
+        margin: 0%;
+        max-width: 100%;
+        font-size: 2.5vh;
+    }
+    header{
+        max-height:10%;
+        border-radius:0;
+        
+    }
+    .header-logo{
+        font-size:3vh;
+    }
+    .menu-icon{
+        max-width:4.5vw;
+    }
+    .menu-wrapper{
+        padding:2%;
+    }
+    .menu-container a {
+        margin:0 2%;
+        padding:0.2%;
+    }
+    .images .image-headline {
+        font-size: 5vw;
+    }
+    .images .image-description{
+        font-size:3vw;
+        top:55%;
+    }
+    .quote{
+        padding:3%;
+        font-size:3vw;
+    }
+    .quote span{   
+    font-size:2.5vw;
+    }
+    .movies-container ul{
+        padding:0% 1%;
+    }
+    .movies-container li {
+        margin: 0.5%;
+        max-width: 31%;
+    }
+    .picture{
+        display:none;
+    }
+    .description{
+        width:100%;
+    }
+    form{
+        max-width:100%;
+    }
+    select{
+        font-size:2.5vw;
+    }
+    .generate{
+        font-size:4vw;
+        max-width:100%;
+    }
+    footer{
+        font-size:2vh;
+    }
+    .footer-wrapper{
+        vertical-align:middle;
+    }
+    .footer-logo {       
+        display:none;
+    }
+    footer p{
+        font-size:1.5vh;
+    }
+    footer .social {
+        padding: 2% 0%;
+    }
+    .social a{
+        font-size: 3vh;
+    }
+    #btn-close-modal{
+        font-size:5vh;
+    } 
+    .rand-wrap {
+        padding: 2%;
+        margin-top:20%;
+    }
+    .rand-result {
+        max-width: 100%;
+        margin: 1% 5%;
+        padding: 4%;
+        font-size: 3.5vw;
+    }
+    #randmovie{
+        margin:2%;
+        padding:5%;
+    }
+    .generate-again {
+        font-size: 3vw;
+        padding:5%;
+        margin-top:40%;
+    }
+    #movie .tab {
+        font-size: 2.8vw;
+        padding-top:3%;
+    }
+    .poster{
+        margin-bottom:0%;
+    } 
+    .summary {
+        margin: 1% 0%;
+    }
+    #raitings .mark{
+        font-size:3vw;
+        margin:1% 2%;
+        padding:3%;
+    }
+    #raitings span{
+        margin-left: 1%;
+    }
+}
