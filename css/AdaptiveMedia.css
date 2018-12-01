@@ -3,48 +3,54 @@
     body {
         margin: 0%;
         max-width: 100%;
-        font-size: 2.3vh;
+        font-size: 3vw;
         overflow-x: hidden !important;
     }
 
     header {
-        max-height: 10%;
+        max-heigheight: 7vh;
+        border-radius: 0;
+        padding: 3% 0%;ht: 10%;
         border-radius: 0;
     }
 
     .header-logo {
-        font-size: 3vh;
+        font-size: 8vw;
     }
-
+     .header-logo img{
+         max-width: 12%;
+     }
     .menu-icon {
-        max-width: 4.5vw;
+        max-width: 7vw;
     }
 
     .menu-wrapper {
         padding: 2%;
     }
-
+    .menu-container{
+        flex-direction: column;
+     }
     .menu-container a {
         margin: 0 2%;
         padding: 0.2%;
     }
 
     .images .image-headline {
-        font-size: 5vh;
+        font-size: 5vw;
     }
 
     .images .image-description {
-        font-size: 3vh;
+        font-size: 3vw;
         top: 55%;
     }
 
     .quote {
         padding: 3%;
-        font-size: 3vh;
+        font-size: 3vw;
     }
 
         .quote span {
-            font-size: 2.5vh;
+            font-size: 2.5vw;
         }
 
     .movies-container ul {
@@ -78,7 +84,7 @@
     }
 
     footer {
-        font-size: 2vh;
+        font-size: 2vw;
     }
 
     .footer-wrapper {
@@ -90,7 +96,7 @@
     }
 
     footer p {
-        font-size: 1.5vh;
+        font-size: 1.5vw;
     }
 
     footer .social {
@@ -98,11 +104,11 @@
     }
 
     .social a {
-        font-size: 3vh;
+        font-size: 3vw;
     }
 
     #btn-close-modal {
-        font-size: 5vh;
+        font-size: 5vw;
     }
 
     .rand-wrap {
@@ -114,7 +120,7 @@
         max-width: 100%;
         margin: 1% 5%;
         padding: 4%;
-        font-size: 3.5vh;
+        font-size: 3.5vw;
     }
 
     #randmovie {
@@ -123,13 +129,13 @@
     }
 
     .generate-again {
-        font-size: 3vh;
+        font-size: 3vw;
         padding: 5%;
         margin-top: 40%;
     }
 
     #movie .tab {
-        font-size: 2.8vh;
+        font-size: 2.8vw;
         padding-top: 3%;
     }
 
