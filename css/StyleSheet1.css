@@ -295,6 +295,7 @@ header .container {
 
 @keyframes menu-animation-out{
     from{height:0%;}
+    50%{height:120%;}
     to{height:100%;}
 }
 
