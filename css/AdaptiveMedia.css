@@ -2,7 +2,7 @@
 
     body {
         margin: 0%;
-        max-width: 100%;
+        max-width: 100% !important;
         font-size: 3vw;
         overflow-x: hidden !important;
     }
