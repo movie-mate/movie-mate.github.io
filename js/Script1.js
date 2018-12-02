@@ -79,6 +79,41 @@ $(document).ready(function () {
         return false; // выключаем стандартное действие
     });
 });
+/**
+         * ѕровер€ет элемент на попадание в видимую часть экрана.
+         * ƒл€ попадани€ достаточно, чтобы верхн€€ или нижн€€ границы элемента были видны.
+         */
+function isVisible(elem) {
+
+    var coords = elem.getBoundingClientRect();
+
+    var windowHeight = document.documentElement.clientHeight;
+
+    // верхн€€ граница elem в пределах видимости »Ћ» нижн€€ граница видима
+    var topVisible = coords.top > 0 && coords.top < windowHeight;
+    var bottomVisible = coords.bottom < windowHeight && coords.bottom > 0;
+
+    return topVisible || bottomVisible;
+}
+function showVisible() {
+    var imgs = document.getElementsByTagName('img');
+    for (var i = 0; i < imgs.length; i++) {
+
+        var img = imgs[i];
+
+        var realsrc = img.getAttribute('realsrc');
+        if (!realsrc) continue;
+
+        if (isVisible(img)) {
+            img.src = realsrc;
+            img.setAttribute('realsrc', '');
+        }
+    }
+
+}
+
+window.onscroll = showVisible;
+showVisible();
 //$(document).ready(function () {
 //    $('.slider').mouseover(function () {
 //        $('.image-description').css("display", "block");
