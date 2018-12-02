@@ -3,16 +3,15 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <title>Главная</title>
-    <link rel="shortcut icon" href="/pics/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/StyleSheet1.css" />
     <link rel="stylesheet" type="text/css" href="css/AdaptiveMedia.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="js/jquery-3.3.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>-->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
@@ -32,9 +31,9 @@
     <header>
         <div class="container">
             <div class="header-wrapper">
-                <a class="header-logo" href="/">
-                        <img src="pics/logo.svg" />
-                        Movie Mate
+                <a class="header-logo" href="/" title="На главную">
+                    <img src="pics/logo.svg" />
+                    Movie Mate
                 </a>
 
                 <div class="menu-activator">
@@ -52,11 +51,11 @@
             </div>
                 <div class="menu-wrapper">
                     <div class="menu-container">
-                        <a href="/">Главная</a>
+                        <a href="/" title="Главная">Главная</a>
                         <a class="go_to" href="#randomizer">Рандомайзер</a>
-                        <a href="ArticlesList.html">Статьи</a>
-                        <a href="MoviesList.html">Фильмы</a>
-                        <a href="FAQ.html">F.A.Q.</a>
+                        <a href="ArticlesList.html" title="Статьи">Статьи</a>
+                        <a href="MoviesList.html" title="Фильмы">Фильмы</a>
+                        <a href="FAQ.html" title="F.A.Q.">F.A.Q.</a>
                     </div>
                 </div>
         </div>
@@ -69,17 +68,17 @@
                 <div class="slider">
                     <div class="images">
                         <div class="slide">
-                            <a href="MoviePage6.html"><img src="pics/gwen.jpg" /></a>
+                            <a href="MoviePage6.html"><img src="pics/gwen.jpg" title="Человек-паук: Через вселенные" alt="Человек-паук: Через вселенные"/></a>
                             <span class="image-headline">Человек-паук: Через вселенные</span>
                             <span class="image-description">В «классической форме Человека-Паука» Майлз Моралес должен балансировать со своей жизнью в старшей школе, а также статусом супергероя.</span>
                         </div>
                         <div class="slide">
-                            <a href="MoviePage4.html"><img src="pics/mary-.jpg" /></a>
+                            <a href="MoviePage4.html"><img src="pics/mary-.jpg" title="Две королевы" alt="Две королевы"/></a>
                             <span class="image-headline">Две королевы</span>
                             <span class="image-description">Мария Стюарт была коронована в Шотландии, когда ей не исполнилось и года. В 16 лет она стала королевой Франции, но овдовела спустя год. Она возвращается в Шотландию, где ей предстоит править своим народом и наладить пошатнувшиеся отношения с кузиной Елизаветой.</span>
                         </div>
                         <div class="slide">
-                            <a href="MoviePage1.html"><img src="pics/mera.jpg" /></a>
+                            <a href="MoviePage1.html"><img src="pics/mera.jpg" title="Аквамен" alt="Аквамен"/></a>
                             <span class="image-headline">Аквамен</span>
                             <span class="image-description">Артур Карри — сын женщины по имени Атланна и работника маяка. Перед смертью Атланна сказала ему, что она была Королевой Атлантиды в изгнании, и пообещала, что рано или поздно Артур станет управлять семью морями.</span>
                         </div>
@@ -89,7 +88,7 @@
             </div>
         </div>
         <div class="q-container">
-            <div class="q-pic"><img src="pics/fight_club_brad.jpg" /></div>
+            <div class="q-pic"><img src="pics/fight_club_brad.jpg" title="Бойцовский клуб" alt="Бойцовский клуб"/></div>
             <div class="quote">
                 "The first rule of Fight Club is: You do not talk about Fight Club."
                 <br><span>Fight Club, 1999</span>
@@ -110,7 +109,7 @@
         <section id="randomizer">
             <div class="wrapper">
                 <div class="picture">
-                    <img src="pics/rand.png" />
+                    <img src="pics/rand.png" title="Генератор фильмов" alt="Генератор фильмов"/>
                 </div>
                 <div class="description">
                     <h2>Не знаете, что посмотреть сегодня?</h2>
@@ -141,7 +140,7 @@
                         <div class="rand-wrap">
                             <div class="rand-result">
                                 Мы советуем вам посмотреть:
-                                <a href="#" id="link"><div id="randmovie">Упс! Что-то пошло не так. Попробуйте еще раз.</div></a>
+                                <a href="#" id="link"><div id="randmovie"></div></a>
                                 <br /><h5>Кликните по названию, чтобы перейти на страницу фильма.</h5>
                                 
                             </div>
@@ -152,6 +151,27 @@
                 </div>
             </div>
         </section>
+
+        <div class="list">
+            <h2>ЛУЧШИЕ СТАТЬИ:</h2>
+            <ul>
+                <li>
+                    <div class="artpic"><img src="pics/Art4/got1.jpg" /></div>
+                    <div class="listname">
+                        <a href="ArticlePage4.html"><h4>Игра Престолов</h4></a>
+                        <h5>Размышления на тему самого популярного сериала современности.</h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="artpic"><img src="pics/Art2/marv4.jpg" /></div>
+                    <div class="listname">
+                        <a href="ArticlePage2.html"><h4>Удивительная Миссис Мэйзел</h4></a>
+                        <h5>«Невероятная Миссис Мэйзел» - новый хит от Amazon и очередной крутой сериал про сильную самостоятельную женщину.</h5>
+                    </div>
+                </li>
+            </ul>
+            <a class="to-articles" href="ArticlesList.html" title="Статьи">Посмотреть другие статьи<i class="fa fa-angle-double-right fa-fw"></i></a>
+        </div>
     </main>
     <footer>
         <div class="footer-wrapper">
@@ -161,16 +181,16 @@
             </div>
             <div class="struct-info">
                 <ul>
-                    <li><a href="/">Главная</a></li>
-                    <li><a href="MoviesList.html">Фильмы</a></li>
-                    <li><a href="ArticlesList.html">Статьи</a></li>
+                    <li><a href="/" title="Главная">Главная</a></li>
+                    <li><a href="MoviesList.html" title="Фильмы">Фильмы</a></li>
+                    <li><a href="ArticlesList.html" title="Статьи">Статьи</a></li>
                 </ul>
             </div>
             <div class="struct-info">
                 <ul>
-                    <li><a href="FAQ.html">F.A.Q.</a></li>
-                    <li><a href="Support.html">Поддержка</a></li>
-                    <li><a href="Credits.html">Источники</a></li>
+                    <li><a href="FAQ.html" title="F.A.Q.">F.A.Q.</a></li>
+                    <li><a href="Support.html" title="Поддержка">Поддержка</a></li>
+                    <li><a href="Credits.html" title="Источники">Источники</a></li>
                 </ul>
             </div>
         </div>
