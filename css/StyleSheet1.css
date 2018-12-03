@@ -246,9 +246,7 @@ header .container {
 .menu-wrapper {
     /*margin-bottom: 10px;*/
     display: none;
-    animation: menu-animation-out ease-in-out 0.7s;
-    /*animation: menu-animation-in ease-in-out 0.7s;*/
-    transition:all .5s ease-in-out;
+    transition:all .7s ease-in-out;
 }
 .menu-container {
     display: flex;
