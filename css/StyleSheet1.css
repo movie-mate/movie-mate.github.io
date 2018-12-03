@@ -248,7 +248,6 @@ header .container {
     display: none;
     animation: menu-animation-out ease-in-out 0.7s;
     /*animation: menu-animation-in ease-in-out 0.7s;*/
-    height: 3.5em;
     transition:all .5s ease-in-out;
 }
 .menu-container {
@@ -295,11 +294,11 @@ header .container {
 }
 
 @keyframes menu-animation-out{
-    from{height:0;}
+    from{height:0%;}
     50%{
-        height:4em;
+        height:120%;
     }
-    to{height:3.5em;}
+    to{height:100%;}
 }
 
 
