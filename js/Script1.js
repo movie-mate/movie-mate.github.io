@@ -24,7 +24,35 @@ $(document).ready(function () {
         speed: 500,
         ctnterMode: true,
         variableWigth: true,
-        pauseOnHover: true
+        pauseOnHover: true,
+        responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
     });
 });
 $(document).ready(function () {
@@ -71,17 +99,17 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $('.go_to').click(function () { // ëîâèì êëèê ïî ññûëêå ñ êëàññîì go_to
-        var scroll_el = $(this).attr('href'); // âîçüìåì ñîäåðæèìîå àòðèáóòà href, äîëæåí áûòü ñåëåêòîðîì, ò.å. íàïðèìåð íà÷èíàòüñÿ ñ # èëè .
-        if ($(scroll_el).length != 0) { // ïðîâåðèì ñóùåñòâîâàíèå ýëåìåíòà ÷òîáû èçáåæàòü îøèáêè
-            $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); // àíèìèðóåì ñêðîîëèíã ê ýëåìåíòó scroll_el
+    $('.go_to').click(function () { // Ã«Ã®Ã¢Ã¨Ã¬ ÃªÃ«Ã¨Ãª Ã¯Ã® Ã±Ã±Ã»Ã«ÃªÃ¥ Ã± ÃªÃ«Ã Ã±Ã±Ã®Ã¬ go_to
+        var scroll_el = $(this).attr('href'); // Ã¢Ã®Ã§Ã¼Ã¬Ã¥Ã¬ Ã±Ã®Ã¤Ã¥Ã°Ã¦Ã¨Ã¬Ã®Ã¥ Ã Ã²Ã°Ã¨Ã¡Ã³Ã²Ã  href, Ã¤Ã®Ã«Ã¦Ã¥Ã­ Ã¡Ã»Ã²Ã¼ Ã±Ã¥Ã«Ã¥ÃªÃ²Ã®Ã°Ã®Ã¬, Ã².Ã¥. Ã­Ã Ã¯Ã°Ã¨Ã¬Ã¥Ã° Ã­Ã Ã·Ã¨Ã­Ã Ã²Ã¼Ã±Ã¿ Ã± # Ã¨Ã«Ã¨ .
+        if ($(scroll_el).length != 0) { // Ã¯Ã°Ã®Ã¢Ã¥Ã°Ã¨Ã¬ Ã±Ã³Ã¹Ã¥Ã±Ã²Ã¢Ã®Ã¢Ã Ã­Ã¨Ã¥ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã  Ã·Ã²Ã®Ã¡Ã» Ã¨Ã§Ã¡Ã¥Ã¦Ã Ã²Ã¼ Ã®Ã¸Ã¨Ã¡ÃªÃ¨
+            $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); // Ã Ã­Ã¨Ã¬Ã¨Ã°Ã³Ã¥Ã¬ Ã±ÃªÃ°Ã®Ã®Ã«Ã¨Ã­Ã£ Ãª Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã³ scroll_el
         }
-        return false; // âûêëþ÷àåì ñòàíäàðòíîå äåéñòâèå
+        return false; // Ã¢Ã»ÃªÃ«Ã¾Ã·Ã Ã¥Ã¬ Ã±Ã²Ã Ã­Ã¤Ã Ã°Ã²Ã­Ã®Ã¥ Ã¤Ã¥Ã©Ã±Ã²Ã¢Ã¨Ã¥
     });
 });
 /**
-         * Ïðîâåðÿåò ýëåìåíò íà ïîïàäàíèå â âèäèìóþ ÷àñòü ýêðàíà.
-         * Äëÿ ïîïàäàíèÿ äîñòàòî÷íî, ÷òîáû âåðõíÿÿ èëè íèæíÿÿ ãðàíèöû ýëåìåíòà áûëè âèäíû.
+         * ÃÃ°Ã®Ã¢Ã¥Ã°Ã¿Ã¥Ã² Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã² Ã­Ã  Ã¯Ã®Ã¯Ã Ã¤Ã Ã­Ã¨Ã¥ Ã¢ Ã¢Ã¨Ã¤Ã¨Ã¬Ã³Ã¾ Ã·Ã Ã±Ã²Ã¼ Ã½ÃªÃ°Ã Ã­Ã .
+         * Ã„Ã«Ã¿ Ã¯Ã®Ã¯Ã Ã¤Ã Ã­Ã¨Ã¿ Ã¤Ã®Ã±Ã²Ã Ã²Ã®Ã·Ã­Ã®, Ã·Ã²Ã®Ã¡Ã» Ã¢Ã¥Ã°ÃµÃ­Ã¿Ã¿ Ã¨Ã«Ã¨ Ã­Ã¨Ã¦Ã­Ã¿Ã¿ Ã£Ã°Ã Ã­Ã¨Ã¶Ã» Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã  Ã¡Ã»Ã«Ã¨ Ã¢Ã¨Ã¤Ã­Ã».
          */
 function isVisible(elem) {
 
@@ -89,7 +117,7 @@ function isVisible(elem) {
 
     var windowHeight = document.documentElement.clientHeight;
 
-    // âåðõíÿÿ ãðàíèöà elem â ïðåäåëàõ âèäèìîñòè ÈËÈ íèæíÿÿ ãðàíèöà âèäèìà
+    // Ã¢Ã¥Ã°ÃµÃ­Ã¿Ã¿ Ã£Ã°Ã Ã­Ã¨Ã¶Ã  elem Ã¢ Ã¯Ã°Ã¥Ã¤Ã¥Ã«Ã Ãµ Ã¢Ã¨Ã¤Ã¨Ã¬Ã®Ã±Ã²Ã¨ ÃˆÃ‹Ãˆ Ã­Ã¨Ã¦Ã­Ã¿Ã¿ Ã£Ã°Ã Ã­Ã¨Ã¶Ã  Ã¢Ã¨Ã¤Ã¨Ã¬Ã 
     var topVisible = coords.top > 0 && coords.top < windowHeight;
     var bottomVisible = coords.bottom < windowHeight && coords.bottom > 0;
 
