@@ -138,10 +138,12 @@
     #movie .tab {
         font-size: 2.8vw;
         padding-top: 3%;
+        width: auto;
     }
 
     .poster {
         margin-bottom: 0%;
+        max-width: auto;
     }
     .arttext img{
         max-width: 100%;
