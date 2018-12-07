@@ -1,12 +1,16 @@
 ﻿@media screen and (max-width:600px) {
 
+    html{
+        padding:0%;
+        width:100%;     
+    } 
     body {
         margin: 0%;
         padding: 0%;
         justify-content: center;
         font-size: 3vw;
         overflow-x: hidden !important;
-        max-width: 100% !important;
+        width: 100% !important;
     }
 
     header {
