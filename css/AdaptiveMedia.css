@@ -2,6 +2,7 @@
 
     body {
         margin: 0%;
+        padding: 0%;
         justify-content: center;
         font-size: 3vw;
         overflow-x: hidden !important;
@@ -138,12 +139,12 @@
     #movie .tab {
         font-size: 2.8vw;
         padding-top: 3%;
-        width: auto;
+        width: 100%;
     }
 
     .poster {
         margin-bottom: 0%;
-        max-width: auto;
+        max-width: 100%;
     }
     .arttext img{
         max-width: 100%;
