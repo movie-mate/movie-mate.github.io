@@ -10,7 +10,7 @@
         justify-content: center;
         font-size: 3vw;
         overflow-x: hidden !important;
-        width: 100% !important;
+        max-width: 100% !important;
     }
 
     header {
