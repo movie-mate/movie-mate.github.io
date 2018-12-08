@@ -244,9 +244,7 @@ header .container {
     box-sizing: border-box;
 }
 .menu-wrapper {
-    /*margin-bottom: 10px;*/
     display: none;
-    transition:all .7s ease-in-out;
 }
 .menu-container {
     display: flex;
@@ -290,16 +288,6 @@ header .container {
     -webkit-transform: translateX(-50%) scaleX(1);
     transform: translateX(-50%) scaleX(1);
 }
-
-@keyframes menu-animation-out{
-    from{height:0%;}
-    50%{
-        height:120%;
-    }
-    to{height:100%;}
-}
-
-
 /******************************************************************************************/
 /* BODY                                                                                */
 /*************/
