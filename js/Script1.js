@@ -7,7 +7,7 @@ $(window).on('load', function () {
 });
 $(document).ready(function () {
     $('.menu-activator').on('click', function () {
-        $('.menu-wrapper').toggle("slow");
+        $('.menu-wrapper').slideToggle("slow");
     });
 });
 $(document).ready(function () {
