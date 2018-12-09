@@ -302,7 +302,7 @@ main{
 main #carousel {
     max-height: 100%;
     position: relative;
-    padding:1%;
+    margin:1%;
     /*padding-bottom:2%;*/
     display:block;
     max-width:98%;
