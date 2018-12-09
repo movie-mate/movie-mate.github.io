@@ -217,7 +217,7 @@ header .container {
     transform-origin: 50% 50%;
     will-change: transform, opacity;
 }
-.menu-activator.is-active, .menu-button:hover path {
+.menu-button:active, .menu-button:hover path {
     stroke: #D00251;
 }
 
