@@ -181,4 +181,7 @@
     #raitings span {
         margin-left: 1%;
     }
+    header, main, footer{
+       overflow-x: auto;
+    } 
 }
