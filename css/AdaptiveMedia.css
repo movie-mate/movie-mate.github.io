@@ -184,4 +184,7 @@
     header, main, footer{
        overflow-x: hidden;
     } 
+    main{
+      min-height:50%;
+    }
 }
