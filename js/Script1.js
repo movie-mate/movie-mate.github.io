@@ -8,6 +8,7 @@ $(window).on('load', function () {
 $(document).ready(function () {
     $('.menu-activator').on('click', function () {
         $('.menu-wrapper').slideToggle(500);
+        $(this).toggleClass('is-active');
     });
 });
 $(document).ready(function () {
